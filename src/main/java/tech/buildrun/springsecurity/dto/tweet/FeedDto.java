@@ -6,7 +6,7 @@ public record FeedDto(
     List<FeedItemDto> feedItems, 
     int page, 
     int pageSize,
-    int totalPage,
-    int totalElements
+    int totalPages,
+    Long totalElements
 ) {
 }
