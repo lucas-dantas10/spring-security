@@ -31,23 +31,17 @@ public class Role {
     }
 
     public enum Values {
-        ADMIN(1L, "admin"),
-        BASIC(2L, "basic");
+        ADMIN(1L),
+        BASIC(2L);
 
         long roleId;
-        String name;
 
-        Values(long roleId, String name) {
+        Values(long roleId) {
             this.roleId = roleId;
-            this.name = name;
         }
 
         public long getRoleId() {
             return roleId;
-        }
-
-        public String getName() {
-            return name;
         }
     }
 }

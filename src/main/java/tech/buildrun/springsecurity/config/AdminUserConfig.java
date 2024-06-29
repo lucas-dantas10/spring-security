@@ -32,7 +32,7 @@ public class AdminUserConfig implements CommandLineRunner {
     @Override
     @Transactional
     public void run(String... args) throws Exception {
-        var roleAdmin = roleRepository.findByName(Role.Values.ADMIN.getName());
+        var roleAdmin = roleRepository.findByName(Role.Values.ADMIN.name());
 
         var userAdmin = userRepository.findByUsername("admin");
 
