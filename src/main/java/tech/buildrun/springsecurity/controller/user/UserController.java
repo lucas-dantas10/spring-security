@@ -21,9 +21,9 @@ import tech.buildrun.springsecurity.repository.UserRepository;
 @RestController
 public class UserController {
     
-    private UserRepository userRepository;
-    private RoleRepository roleRepository;
-    private BCryptPasswordEncoder passwordEncoder;
+    private final UserRepository userRepository;
+    private final RoleRepository roleRepository;
+    private final BCryptPasswordEncoder passwordEncoder;
 
     public UserController(
         UserRepository userRepository, 
