@@ -68,8 +68,8 @@ public class User {
         return roles;
     }
 
-    public void setRole(Role role) {
-        this.roles.add(role);
+    public void setRoles(Set<Role> roles) {
+        this.roles = roles;
     }
 
     public boolean isLoginCorrect(LoginRequest request, PasswordEncoder passwordEncoder) {
